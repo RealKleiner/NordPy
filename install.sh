@@ -11,6 +11,9 @@ fi
 if ! [ -z `which pacman 2> /dev/null` ]; # Fedora
     then sudo pacman -Sy python3 tk python-requests openvpn wget unzip 2> /dev/null
 fi
+if ! [ -z `which zypper 2> /dev/null` ]; # openSUSE
+    then sudo pacman -Sy python3 python3-tk python3-requests openvpn wget unzip 2> /dev/null
+fi
 
 current_dir=`pwd`
 
